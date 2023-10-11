@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+h2{
+    font-size: 4.5rem;
+}
+
+h3{
+    font-size: 3.8rem;
+}
+
+h4{
+    font-weight: 600;
+}
+
+/* --------------------- Header --------------------- */
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 10%;
+}
+
+header .portfolio{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+header .portfolio span{
+    color: #2196f3;
+}
+
+header .menu{
+    display: flex;
+}
+
+header .menu a{
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: black;
+    transition: all .45s ease;
+    border-radius: 6px;
+}
+
+header .menu li:first-child a{
+    background-color: #2196f3;
+    color: white;
+}
+
+header .menu a:hover{
+    background-color: #2196f3;
+    color: white;
+}
+
+header .contact-btn{
+    background-color: #2196f3;
+    border: 2px solid white;
+    transition: .45s ease;
+    padding: 10px 20px;
+    border-radius:5px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: white;
+}
+
+header .contact-btn:hover{
+    border: 2px solid #2196f3;
+    background-color: transparent;
+    color: black;
+}
+
+/* --------------------- Page 1 - Start --------------------- */
+
+.start{
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    background-color: whitesmoke;
+    background: url(./img/laptop2.PNG) no-repeat center center;
+    background-size: cover;
+}
+
+.start .row-space{
+    flex: 1;
+}
+
+.start .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: #2196f3;
+    margin-top: 1vh;
+}
+
+.start .social a{
+    font-size: 1.5rem;
+    margin: 0.3vh 15%;
+    text-align: center;
+    color: inherit;
+    border: 1px solid #2196f3;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0.75;
+}
+
+.start .social a:hover{
+    opacity: 1;
+}
+
+.start .text-box{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.start .text-box h3{
+    color: #2196f3;
+}
+
+.start .text-box form{
+    width: 320px;
+    position: relative;
+    top: 2vh;
+}
+
+.start .text-box form input:first-child{
+    width: 100%;
+    padding: 12px 70px 12px 15px;
+    border: 2px solid #2196f3;
+    border-radius: 30px;
+}
+
+.start .text-box form input:last-child{
+    position: absolute;
+    width: 70px;
+    border: none;
+    padding: 6px 0;
+    border-radius: 30px;
+    background-color: #2196f3;
+    color: white;
+    box-shadow: 0px 0px 15px #bdbdbd;
+    border: 2px solid transparent;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+
+.start .text-box form input:last-child:hover{
+    border: 2px solid #2196f3;
+    background-color: transparent;
+    color: black;
+}
+
+/* --------------------- Page 2 - About --------------------- */
+
+.about{
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+}
+
+.about .image{
+    flex: 4;
+    background: url(./img/boy.png) no-repeat center center;
+    background-size: cover;
+}
+
+.about .text-box{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .text-box h2{
+    color: #2196f3;
+}
+
+.about .text-box h4{
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin: 3vh 0 3vh;
+}
+
+.about .text-box button{
+    background-color: #2196f3;
+    border: 2px solid white;
+    transition: .45s ease;
+    padding: 10px 20px;
+    border-radius:30px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: white;
+    width: 120px;
+}
+
+.about .text-box button:hover{
+    border: 2px solid #2196f3;
+    background-color: transparent;
+    color: black;
+}
+
+.about .row-space{
+    flex: 1;
+}
+
+/* --------------------- Page 3 - Skills --------------------- */
+
+.skills{
+    background-color: whitesmoke;
+    padding: 5vh 0;
+    width: 100%;
+}
+
+.skills .title{
+    width: 100%;
+}
+
+.skills .title h2{
+    width: 100%;
+    color: #2196f3;
+    text-align: center;
+    margin: 50px 0 80px 0;
+}
+
+.skills .skills-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 40px 0;
+    flex: 6;
+    gap: 5%;
+}
+
+.skills .skills-box .skills-sq{
+    text-align: center;
+}
+
+.skills .skills-box .skills-sq h4{
+    margin-bottom: 20px;
+}
+
+.skills .skills-box .skills-sq .sq1{
+    width: 200px;
+    height: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid #2196f3;
+}
+
+.skills .skills-box .skills-sq .sq2{
+    height: 18px;
+    border-radius: 5px;
+    position: relative;
+    top: -19px;
+    background-color: #2196f3;
+}
+
+/* --------------------- Page 4 - Service --------------------- */
+
+.service{
+    padding: 5vh 0;
+    width: 100%;
+}
+
+.service .title h2{
+    width: 100%;
+    color: #2196f3;
+    text-align: center;
+    margin: 10px 0 80px 0;
+}
+
+.service .card-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.service .card-box .card{
+    width: 385px;
+    min-height: 415px;
+    padding: 20px 35px;
+    background-color: #2196f3;
+    border-radius: 20px;
+    margin: 15px 15px 10vh 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.service .card-box .card i{
+    font-size: 2rem;
+    text-align: center;
+    margin: 25px 0;
+    color: white;
+}
+
+.service .card-box .card h4{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.service .card-box .card h5{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 2vh 0 4vh;
+}
+
+.service .card-box .card .button{
+    background-color: #2196f3;
+    border: 2px solid white;
+    transition: .45s ease;
+    padding: 10px 20px;
+    border-radius:30px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: white;
+    width: 120px;
+}
+
+.service .card-box .card .button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* --------------------- Page 5 - Contact --------------------- */
+
+.contact{
+    background-color: whitesmoke;
+    padding: 10vh 0 8vh 0;
+    width: 100%;
+    display: flex;
+}
+
+.contact .col1{
+    flex: 1;
+}
+
+.contact .col2{
+    flex: 4;
+}
+
+.contact .col2 h2{
+    color: #2196f3;
+}
+
+
+.contact .col2 h4{
+    margin-top: 2vh;
+}
+
+.contact .col2 h4 i{
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+.contact .col2 .social{
+    margin-top: 30px;
+}
+
+.contact .col2 .social a{
+    font-size: 1.6rem;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    display: inline-block;
+    transition: 0.5s;
+    opacity: 0.8;
+    color: black;
+}
+
+.contact .col2 .social a:hover{
+    transform: translateY(-5px);
+    color: #2196f3;
+    opacity: 1;
+}
+
+.contact .col3{
+    flex: 4;
+}
+
+.contact .col3 form{
+    width: 100%;
+}
+
+.contact .col3 form input,.contact .col3 form textarea{
+    width: 100%;
+    border: 1px solid #2196f3;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 1rem;
+    color: black;
+}
+
+.contact .col4{
+    flex: 1;
+}
+
+.contact .button{
+    background-color: #2196f3;
+    border: 2px solid white;
+    transition: .45s ease;
+    padding: 10px 20px;
+    border-radius:30px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: white;
+    width: 8rem;
+}
+
+.contact .button:hover{
+    border: 2px solid #2196f3;
+    background-color: transparent;
+    color: black;
+}
+
+/* --------------------- Footer --------------------- */
+
+footer{
+    width: 100%;
+    padding: 24px 10%;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+footer h4{
+    color: black;
+}
+
+/* --------------------- Responsive --------------------- */
+
+@media (max-width: 1910px){
+}
+
+@media (max-width: 1680px){
+}
+
+@media (max-width: 1440px){
+    header{
+        padding: 20px 3%;
+        transition: 2s;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .about .text-box h2{
+        font-size: 3rem;
+    }
+    .about .row-space{
+        flex: 0.5;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        justify-content: center;
+        transition: 2s;
+    }
+    header .portfolio{
+        display: none;
+    }
+    header .contact{
+        display: none;
+    }
+    .start{
+        background: whitesmoke;
+    }
+    .start .row-space, .about .row-space{
+        display: none;
+    }
+    .start .text-box,.about .text-box{
+        align-items: center;
+        text-align: center;
+    }
+    .about .image{
+        display: none;
+    }
+    .about .text-box h4{
+        margin: 4vh 10% 4vh 10%;
+    }
+}
+
+@media (max-width: 425px){
+    header .menu a{
+        font-size: 0.8rem;
+        padding: 10px 10px;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    h4{
+        font-size: 0.8rem;
+    }
+    .start .text-box form{
+        width: 280px;
+    }
+    .start .text-box h4{
+        padding: 2vh 0 2vh;
+    }
+}
