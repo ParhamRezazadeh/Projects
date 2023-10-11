@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Store</title>
+    <link rel="stylesheet" href="./code/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="" class="logo">Smart <span>Watch</span></a>
+            <form>
+                <input type="text" name="search" id="search" placeholder="Search">
+            </form>
+            <div class="nav-part">
+                <a href="" class="login">Login <i class='bx bxs-arrow-to-right'></i></a>
+                <div class="line"></div>
+                <a href="" class="cart" style="margin-left: 1rem;"><i class='bx bx-cart'></i></a>
+            </div>
+        </nav>
+        <menu>
+            <ul class="tag-box">
+                <li class="products"><a href=""><i class='bx bx-list-ul'></i>Products<i class='bx bxs-chevron-down'></i></a></li>
+                <li><a href="#overview"><i class='bx bx-layer' ></i>Overview</a></li>
+                <li><a href="#description"><i class='bx bx-bookmark-alt-plus' ></i>Description</a></li>
+            </ul>
+            <button class="theme" id="dark" onclick='set_theme()'><i class='bx bx-moon' ></i></button>
+            <button class="theme" id="light" onclick='set_theme()'><i class='bx bx-sun' ></i></button>
+        </menu>
+    </header>
+
+    <section class="price">
+        <h2>£120.00</h2>
+        <div class="off">
+            <h2>10% Off</h2>
+        </div>
+    </section>
+
+    <section class="overview" id="overview">
+        <div class="overview-img-box">
+            <div class="overview-img-big">
+                <img src="./img/watch_black.jpg" id="watch_black_big">
+            </div>
+            <div class="overview-img-little-box">
+                <div class="overview-img-little" style="background-image: url(./img/watch_black.jpg);" id="watch_black"></div>
+                <div class="overview-img-little" style="background-image: url(./img/watch_blue.jpg);" id="watch_blue"></div>
+                <div class="overview-img-little" style="background-image: url(./img/watch_pink.jpg);" id="watch_pink"></div>
+            </div>
+        </div>
+
+        <div class="overview-content">
+            <div class="overview-title">
+                <h3>Smart Watch</h3>
+            </div>
+            <div class="overview-text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus dolorum delectus alias nesciunt modi adipisci, vero molestias est, at officiis velit dolores nulla? Ipsam ipsa unde delectus sunt pariatur!</p>
+            </div>
+            <form>
+                <label for="color-select">Colors</label>
+                <select id="color-select">
+                    <option value="Option">Choos an option</option>
+                    <option value="Option">Black</option>
+                    <option value="Option">Blue</option>
+                    <option value="Option">Pink</option>
+                </select>
+            </form>
+            <form>
+                <label for="band-select">Bands</label>
+                <select id="band-select">
+                    <option value="Option">Choos an option</option>
+                    <option value="Option">Line</option>
+                    <option value="Option">Flux</option>
+                    <option value="Option">Eco</option>
+                </select>
+            </form>
+            <div class="buy">
+                <input type="number" value="1">
+                <a href="" class="btn">ADD TO CART</a>
+            </div>
+            <div class="overview-bottom">
+                <h4>Share</h4>
+                <a href=""><i class='bx bx-share-alt'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="description" id="description">
+        <div class="description-left">
+            <button class="description-button" onclick='set_description()'>Description</button>
+            <button class="description-button" onclick='set_information()'>Information</button>
+            <button class="description-button" onclick='set_review()'>Reviews (0)</button>
+        </div>
+
+        <div class="description-right">
+            <div class="d-box" id="description" style="display: block;">
+                <h3>Description</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et rerum veniam officia ab blanditiis quas repudiandae similique exercitationem, optio facilis debitis quaerat harum dolorem, soluta corporis corrupti! Cum maiores voluptate doloribus quam, molestiae enim soluta nostrum, repudiandae, pariatur architecto quasi.</p>
+            </div>
+
+            <div class="d-box" id="information" style="display: none;">
+                <h3>Additional information</h3>
+                <div class="description-info">
+                    <h4>Weight</h4>
+                    <p>0.25 kg</p>
+                </div>
+                <div class="description-info">
+                    <h4>Dimensions</h4>
+                    <p>12 &#739; 13 &#739; 14 cm</p>
+                </div>
+            </div>
+
+            <div class="d-box" id="review" style="display: none;">
+                <h3>Reviews</h3>
+                <p>There are no reviews yet</p>
+
+                <form action="">
+                    <label for="">Your review</label>
+                    <textarea name="review" id="review-text" cols="30" rows="10"></textarea>
+                </form>
+                <form action="">
+                    <label for="">Name</label>
+                    <input type="text">
+                </form>
+                <form action="" style="margin-bottom: 4rem;">
+                    <label for="">Email</label>
+                    <input type="email">
+                </form>
+                <a href="" class="btn">SUBMIT REVIEW</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Copyright 2023 | Parham Rezazadeh | All Rights Reserved</p>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/mr_parhamrz/?hl=en" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/Mr-Parham" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://discord.gg/Ma6pvFUG6t" target="_blank"><i class='bx bxl-discord-alt' ></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+    </footer>
+
+    <script src="./code/script.js"></script>
+</body>
+</html>

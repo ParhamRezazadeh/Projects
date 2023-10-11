@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bg-color: whitesmoke;
+    --second-bg-color: rgb(220, 220, 220);
+    --text-color: black;
+    --main-color: #00a2ff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+h2{
+    font-size: 5.6rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+h4{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+span{
+    color: var(--main-color);
+}
+section{
+    padding: 10rem 9% 2rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 1rem;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn:hover{
+    box-shadow: none;
+    background: transparent;
+    color: var(--text-color);
+}
+/* ------------------
+    Header Styles
+------------------ */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+}
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+}
+header nav .logo{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+header nav form input{
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    padding: .8rem 2rem;
+    width: 30vw;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border: .1rem solid var(--second-bg-color);
+    text-align: center;
+}
+header nav form input:hover,
+header nav form input:focus{
+    border-color: var(--text-color);
+}
+header nav .nav-part{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+header nav .nav-part .login{
+    font-size: 1.8rem;
+    padding: .8rem 1rem;
+    border-radius: 1rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+header nav .nav-part .line{
+    height: 2.6rem;
+    width: .1rem;
+    background: var(--second-bg-color);
+}
+header nav .nav-part .login i,
+header nav .nav-part .cart{
+    font-size: 2.4rem;
+    color: var(--text-color);
+}
+header nav .nav-part .cart:hover,
+header nav .nav-part .login:hover,
+header nav .nav-part .login:hover i{
+    color: var(--main-color);
+    transform: scale(1.05);
+}
+/* ----------------------
+    Header Menu Styles
+---------------------- */
+header menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    border-bottom: .1rem solid var(--second-bg-color);
+}
+header menu .tag-box{
+    display: flex;
+    gap: 4rem;
+}
+header menu .tag-box a{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+header menu .theme{
+    font-size: 2.6rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+header menu #light{
+    display: none;
+}
+header menu .theme:hover,
+header menu .tag-box a:hover{
+    color: var(--main-color);
+    transform: scale(1.05);
+}
+/* --------------------
+    Overview Styles
+-------------------- */
+.overview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.overview .overview-content{
+    width: 40%;
+}
+.overview .overview-content h2{
+    font-size: 6.4rem;
+}
+.overview .overview-content h3{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.overview .overview-content p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-right: 8%;
+}
+.overview img{
+    width: 35%;
+}
+/* ---------------------
+    Features Styles
+--------------------- */
+.features .features-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.features .features-up .features-circle{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    font-weight: 300;
+    color: var(--main-color);
+    box-shadow: inset 0 -.3em .3em rgba(0, 0, 0, 0.1),0.1em 0.1em .3em rgba(0, 0, 0, 0.3);
+}
+.features .features-up .features-content{
+    width: 30vw;
+}
+.features .features-up .features-content h3{
+    font-weight: 600;
+}
+.features .features-up .features-content h4{
+    margin: 1rem 0 2rem 0;
+    font-weight: 500;
+}
+.features .features-down{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin: 6rem 0;
+}
+.features .features-down .features-box{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+.features .features-down .features-box p{
+    margin-top: 1rem;
+    line-height: normal;
+}
+.features .features-down .features-box:hover h4{
+    color: var(--main-color);
+}
+.features .features-down .features-box .features-icon-box a{
+    border: .1rem solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.features .features-down .features-box .features-icon-box a i{
+    font-size: 3.6rem;
+    color: var(--main-color);
+}
+.features .features-down .features-box:hover .features-icon-box a{
+    transform: scale(1.1);
+}
+/* -------------------
+    Design Styles
+------------------- */
+.design .design-text{
+    text-align: center;
+}
+.design .design-text p{
+    margin: 0 20%;
+}
+.design .design-img-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+}
+.design .design-img-box .design-img{
+    margin: 8rem 0;
+}
+.design .design-img-box a:hover img{
+    transform: scale(1.05);
+}
+/* -------------------
+    Videos Styles
+------------------- */
+.videos{
+    display: flex;
+    padding: 0;
+}
+.videos .videos-img{
+    background: no-repeat center center;
+    background-size: cover;
+    height: 60rem;
+    display: flex;
+    align-items: flex-end;
+}
+.videos .videos-img .videos-content{
+    padding: 4rem 8rem;
+    color: white;
+}
+.videos .videos-img .videos-content h3{
+    font-weight: 400;
+}
+.videos .videos-img .videos-content p{
+    line-height: normal;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+.videos .videos-img .videos-content .btn:hover{
+    color: white;
+}
+/* ----------------
+    Buy Styles
+---------------- */
+.buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 9%;
+    border-top: 1px solid var(--second-bg-color);
+}
+/* ------------
+    Footer
+------------ */
+footer{
+    text-align: center;
+    padding: 2rem 9%;
+}
+footer p{
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+footer .footer-icons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+footer .footer-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: .5rem;
+    opacity: .7;
+}
+footer .footer-icons a:hover{
+    opacity: 1;
+}
+footer .footer-icons a i{
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}

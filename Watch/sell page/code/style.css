@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bg-color: whitesmoke;
+    --second-bg-color: rgb(220, 220, 220);
+    --text-color: black;
+    --main-color: #6a9bd7;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.btn{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 1.25rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+}
+.over
+/* ------------------
+    Header Styles
+------------------ */
+header{
+    width: 100%;
+    background-color: var(--bg-color);
+}
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+}
+header nav .logo{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+header nav form input{
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    padding: .8rem 2rem;
+    width: 30vw;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border: .1rem solid var(--second-bg-color);
+    text-align: center;
+}
+header nav form input:hover,
+header nav form input:focus{
+    border-color: var(--text-color);
+}
+header nav .nav-part{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+header nav .nav-part .login{
+    font-size: 1.8rem;
+    padding: .8rem 1rem;
+    border-radius: 1rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+header nav .nav-part .line{
+    height: 2.6rem;
+    width: .1rem;
+    background: var(--second-bg-color);
+}
+header nav .nav-part .login i,
+header nav .nav-part .cart{
+    font-size: 2.4rem;
+    color: var(--text-color);
+}
+header nav .nav-part .cart:hover,
+header nav .nav-part .login:hover,
+header nav .nav-part .login:hover i{
+    color: var(--main-color);
+    transform: scale(1.05);
+}
+/* ----------------------
+    Header Menu Styles
+---------------------- */
+header menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    border-bottom: .1rem solid var(--second-bg-color);
+}
+header menu .tag-box{
+    display: flex;
+    gap: 4rem;
+}
+header menu .tag-box a{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+header menu .theme{
+    font-size: 2.6rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+header menu #light{
+    display: none;
+}
+header menu .theme:hover,
+header menu .tag-box a:hover{
+    color: var(--main-color);
+    transform: scale(1.05);
+}
+/* -----------------
+    Price Styles
+----------------- */
+.price{
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    gap: 2rem;
+}
+.price h2{
+    color: white;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.price .off{
+    padding: .2rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid white;
+}
+/* --------------------
+    Overview Styles
+-------------------- */
+.overview{
+    display: flex;
+    justify-content: center;
+    padding: 8rem 20%;
+    gap: 10%;
+}
+.overview .overview-img-box{
+    width: 50%;
+    text-align: center;
+}
+.overview .overview-img-little-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+    width: 100%;
+}
+.overview .overview-img-little-box .overview-img-little{
+    background: no-repeat center center;
+    background-size: cover;
+    width: 6.4rem;
+    height: 7.3rem;
+}
+.overview .overview-content{
+    width: 50%;
+    height: 100%;
+}
+.overview .overview-content .overview-title{
+    width: 100%;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--second-bg-color);
+}
+.overview .overview-content .overview-title h3{
+    font-size: 3.2rem;
+    font-weight: 100;
+}
+.overview .overview-content .overview-text p{
+    font-size: 1.6rem;
+    margin: 3rem 0;
+}
+.overview .overview-content form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .6rem 0;
+}
+.overview .overview-content form label{
+    font-size: 1.8rem;
+}
+.overview .overview-content form select{
+    background-color: var(--bg-color);
+    border: 1px solid var(--second-bg-color);
+    color: var(--text-color);
+    padding: .8rem 1rem;
+    width: 80%;
+}
+.overview .overview-content form select:focus{
+    border-color: var(--main-color);
+}
+.overview .overview-content .buy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--second-bg-color);
+    padding: 3rem 0;
+}
+.overview .overview-content .buy input{
+    width: 8rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+}
+view .overview-content .overview-bottom{
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.overview .overview-content .overview-bottom h4{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.overview .overview-content .overview-bottom a{
+    font-size: 2rem;
+}
+.overview .overview-content .overview-bottom a:hover{
+    color: var(--main-color);
+}
+/* ------------------------
+    Description Styles
+------------------------ */
+.description{
+    display: flex;
+    justify-content: center;
+    padding: 0 22%;
+    gap: 3%;
+    margin-bottom: 8rem;
+}
+.description .description-left{
+    width: 25%;
+    height: 100%;
+}
+.description .description-left .description-button{
+    border-bottom: 1px solid var(--second-bg-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 2rem .5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.description .description-right{
+    width: 75%;
+    height: 100%;
+}
+.description .description-right .d-box{
+    border: 1px solid var(--second-bg-color);
+    padding: 4rem;
+}
+.description .description-right .d-box h3{
+    font-size: 2.4rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.description .description-right .d-box p{
+    font-size: 1.6rem;
+}
+.description .description-right .d-box .description-info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.description .description-right .d-box .description-info h4{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.description .description-right .d-box form label{
+    display: block;
+    margin: 3rem 0 .5rem 0;
+    font-size: 1.6rem;
+    width: 100%;
+}
+.description .description-right .d-box form textarea,
+.description .description-right .d-box form input{
+    border: 1px solid var(--second-bg-color);
+    background-color: var(--bg-color);
+    padding: 1rem;
+    resize: none;
+    width: 100%;
+}
+/* ------------
+    Footer
+------------ */
+footer{
+    text-align: center;
+    padding: 2rem 9%;
+}
+footer p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+footer .footer-icons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+footer .footer-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: .5rem;
+    opacity: .7;
+}
+footer .footer-icons a:hover{
+    opacity: 1;
+}
+footer .footer-icons a i{
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}

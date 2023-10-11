@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Store</title>
+    <link rel="stylesheet" href="./code/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="" class="logo">Smart <span>Watch</span></a>
+            <form>
+                <input type="text" name="search" id="search" placeholder="Search">
+            </form>
+            <div class="nav-part">
+                <a href="" class="login">Login <i class='bx bxs-arrow-to-right'></i></a>
+                <div class="line"></div>
+                <a href="" class="cart" style="margin-left: 1rem;"><i class='bx bx-cart'></i></a>
+            </div>
+        </nav>
+        <menu>
+            <ul class="tag-box">
+                <li class="products"><a href=""><i class='bx bx-list-ul'></i>Products<i class='bx bxs-chevron-down'></i></a></li>
+                <li><a href="#overview"><i class='bx bx-layer' ></i>Overview</a></li>
+                <li><a href="#features"><i class='bx bx-bookmark-alt-plus' ></i>Features</a></li>
+                <li><a href="#design"><i class='bx bxs-watch-alt'></i>Design</a></li>
+                <li><a href="#videos"><i class='bx bx-video' ></i>Videos</a></li>
+                <!-- <li><a href="#buy"><i class='bx bx-cart-add' ></i>Buy Now</a></li> -->
+            </ul>
+            <button class="theme" id="dark" onclick='set_theme()'><i class='bx bx-moon' ></i></button>
+            <button class="theme" id="light" onclick='set_theme()'><i class='bx bx-sun' ></i></button>
+        </menu>
+    </header>
+
+    <section class="overview" id="overview" style="min-height: 100vh;">
+        <div class="overview-content">
+            <h2>Overview</h2>
+            <h3>Smart <span>Watch</span></h3>
+            <p>A smartwatch is a wearable computer in the form of a watch; modern smartwatches provide a local touchscreen interface for daily use, while an associated smartphone app provides management and telemetry, such as long-term biomonitoring.</p>
+        </div>
+        <img src="./img/overview.png">
+    </section>
+
+    <section class="features" id="features" style="padding-top: 2rem;">
+        <div class="features-up">
+            <div class="features-circle">Features</div>
+
+            <div class="features-content">
+                <h3>The Most Powerful Software</h3>
+                <h4>Innovation on your wrist</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident doloremque magnam voluptatem nisi cumque beatae? Repellat beatae rerum aperiam, suscipit modi quo eaque voluptates.</p>
+            </div>
+        </div>
+
+        <div class="features-down">
+            <div class="features-box">
+                <div class="features-icon-box"><a href=""><i class='bx bx-power-off'></i></a></div>
+                <div class="features-right-box">
+                    <h4>Power Mode</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nobis.</p>
+                </div>
+            </div>
+
+            <div class="features-box">
+                <div class="features-icon-box"><a href=""><i class='bx bxs-wrench'></i></a></div>
+                <div class="features-right-box">
+                    <h4>High Quality</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nobis.</p>
+                </div>
+            </div>
+
+            <div class="features-box">
+                <div class="features-icon-box"><a href=""><i class='bx bxs-bell'></i></a></div>
+                <div class="features-right-box">
+                    <h4>Rings</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nobis.</p>
+                </div>
+            </div>
+
+            <div class="features-box">
+                <div class="features-icon-box"><a href=""><i class='bx bxs-speaker'></i></a></div>
+                <div class="features-right-box">
+                    <h4>Best Sounds</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nobis.</p>
+                </div>
+            </div>
+
+            <div class="features-box">
+                <div class="features-icon-box"><a href=""><i class='bx bx-refresh' ></i></a></div>
+                <div class="features-right-box">
+                    <h4>Restore</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nobis.</p>
+                </div>
+            </div>
+
+            <div class="features-box">
+                <div class="features-icon-box"><a href=""><i class='bx bxs-bar-chart-alt-2'></i></a></div>
+                <div class="features-right-box">
+                    <h4>Best Price</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, nobis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="design" id="design">
+        <div class="design-text">
+            <h3>Choose Your <span>Favorite Color</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo sunt voluptatum atque natus fuga repudiandae aperiam dolor eius ex! Vitae.</p>
+        </div>
+
+        <div class="design-img-box">
+            <div class="design-img">
+                <a href="" target="_blank"><img src="./img/watch_black.jpg" id="watch_black"></a>
+            </div>
+            <div class="design-img">
+                <a href="" target="_blank"><img src="./img/watch_blue.jpg" id="watch_blue"></a>
+            </div>
+            <div class="design-img">
+                <a href="" target="_blank"><img src="./img/watch_pink.jpg" id="watch_pink"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="buy" id="buy">
+        <div class="buy-content">
+            <h3>Available, Get It Now Online!</h3>
+            <p>Get New Awsume Watch From That Button</p>
+        </div>
+
+        <a href="" target="_blank" class="btn">Order Now</a>
+    </section>
+
+    <section class="videos" id="videos">
+        <div class="videos-img" style="background-image: url(./img/guide.jpg);">
+            <div class="videos-content">
+                <h3>Guide Tours</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut maiores ducimus accusantium.</p>
+                <a href="" class="btn">See Video</a>
+            </div>
+        </div>
+
+        <div class="videos-img" style="background-image: url(./img/commercials_ads.jpg);">
+            <div class="videos-content">
+                <h3>Commercials</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut maiores ducimus accusantium.</p>
+                <a href="" class="btn">See Video</a>
+            </div>
+        </div>
+
+        <div class="videos-img" style="background-image: url(./img/tutorials.jpg);">
+            <div class="videos-content">
+                <h3>Tutorials</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut maiores ducimus accusantium.</p>
+                <a href="" class="btn">See Video</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Copyright 2023 | Parham Rezazadeh | All Rights Reserved</p>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/mr_parhamrz/?hl=en" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/Mr-Parham" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://discord.gg/Ma6pvFUG6t" target="_blank"><i class='bx bxl-discord-alt' ></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+    </footer>
+
+    <script src="./code/script.js"></script>
+</body>
+</html>
