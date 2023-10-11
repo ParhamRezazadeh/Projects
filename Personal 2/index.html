@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <!-- Link Style -->
+    <link rel="stylesheet" href="codes/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header Menu -->
+    <header>
+        <a href="" class="logo"><span>P</span>ortfolio</a>
+        
+        <nav class="btn-nav">
+            <i class='bx bx-menu'></i>  
+            <i class='bx bx-x'></i>
+            <input class="menu-btn" type="checkbox"></input>
+        </nav>
+        <nav class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="color" id="color">
+        <div class="close">
+            <button class="theme" onclick='setting_close()'><i class='bx bxs-cog'></i></button>
+            <button class="mode" onclick='set_theme()'>
+                <i id="sun" class='bx bxs-sun' ></i>
+                <i id="moon" class='bx bxs-moon' ></i>
+            </button>
+        </div>
+        <div class="color-content">
+            <h4>Theme Colors</h4>
+            <div class="color-box">
+                <button style="background-color: rgb(245, 8, 0);" onclick='set_red()'></button>
+                <button style="background-color: rgb(253, 119, 9);" onclick='set_orange()'></button>
+                <button style="background-color: rgb(2, 156, 72);" onclick='set_green()'></button>
+                <button style="background-color: rgb(0, 195, 255);" onclick='set_blue()'></button>
+                <button style="background-color: rgb(117, 79, 247);" onclick='set_purple()'></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h2>Parham Rezazadeh</h2>
+            <h3 style="margin-bottom: 2rem;">I am <span>Web Developer</span></h3>
+            <p class="p-home" style="margin-right: 25%;">I am a front end web developer and a Python developer. I can provide clean code and pixel perfect design and create windows apps.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/mr_parhamrz/?hl=en" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://github.com/Mr-Parham" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://discord.gg/Ma6pvFUG6t" target="_blank"><i class='bx bxl-discord-alt' ></i></a>
+                <a href="https://linkedin.com/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="./images/laptop.png" alt="">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/boy.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 style="font-size: 7.2rem;">About <span>Me</span></h2>
+            <h3>Web Developer</h3>
+            <p >I am a front end web developer. 
+            I can provide clean code and pixel perfect design. I also make the website more interactive with web animations. 
+            I am a Python developer too. I complete some freelance project and im expert in making pc applications</p>
+            <a href="" class="btn" target="_blank">Read More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>I am a front end web developer. I can provide clean code and pixel perfect design. I can also make the website more interactive with web animations.</p>
+                <a href="" class="btn" target="_blank">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-analyse' ></i>
+                <h3>Data analysis</h3>
+                <p>I can do good Data analysis.I complete some freelance project about Data analysis.I use Python & so many libraries in Python that can analysis data.</p>
+                <a href="" class="btn" target="_blank">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxl-python'></i>
+                <h3>Python Development</h3>
+                <p>I am a Python developer too. I complete some freelance project and im expert in making pc applications. You can feel free too let me do your works.</p>
+                <a href="" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+        <h2>My <span>Projects</span></h2>
+        
+        <div class="projects-container">
+            <div class="projects-box projects-box1">
+                <img src="./images/p (1).jpg">
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>I can provide clean code and pixel perfect design.</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box projects-box2">
+                <img src="./images/p (6).jpg">
+                <div class="projects-layer">
+                    <h4>Data analysis</h4>
+                    <p>I use Python & so many libraries in Python that can analysis data.</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="./images/p (3).jpg">
+                <div class="projects-layer">
+                    <h4>Python Development</h4>
+                    <p>I am expert in making pc applications</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="./images/p (4).jpg">
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>I can provide clean code and pixel perfect design.</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="./images/p (5).jpg">
+                <div class="projects-layer">
+                    <h4>Data analysis</h4>
+                    <p>I use Python & so many libraries in Python that can analysis data.</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="./images/p (2).jpg">
+                <div class="projects-layer">
+                    <h4>Python Development</h4>
+                    <p>I am expert in making pc applications</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact <span>Me!</span></h2>
+        
+        <form action="">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Social Media ID">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; 2023 Designed By Parham Rezazadeh</p>
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </footer>
+
+    <!-- Link Script -->
+    <script src="codes/script.js"></script>
+</body>
+</html>
